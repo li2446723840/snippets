@@ -8,10 +8,9 @@
 	// Example:
 	"Print to console": {
 		"scope": "javascript,typescript",
-		"prefix": ["leixingpanduan"],
+		"prefix": ["timeStamp","shijianchuo"],
 		"body": [
-			"var stringObject = new String(\"hello world\"); ",
-			"console.log(stringObject instanceof String);   // 输出 \"true\""
+			"let timeStamp=new Date().getTime()",
 		],
 		"description": "Log output to console"
 	}

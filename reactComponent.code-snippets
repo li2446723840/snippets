@@ -7,11 +7,29 @@
 	// Placeholders with the same ids are connected.
 	// Example:
 	"Print to console": {
-		"scope": "javascript,typescript",
-		"prefix": ["leixingpanduan"],
+		"scope": "javascript,typescript,php,java,css,html,react",
+		"prefix": [
+			"reactComponent",
+			"childComponents"
+		],
 		"body": [
-			"var stringObject = new String(\"hello world\"); ",
-			"console.log(stringObject instanceof String);   // 输出 \"true\""
+			"import React, { Component } from 'react';",
+			"import { withRouter, Link, routerRedux } from 'dva/router';",
+			"",
+			"class ProductList extends React.Component {",
+			"   constructor(props){",
+			"      super(props);",
+			"   }",
+			"   render() {",
+			"      return (",
+			"      <>",
+			"      ",
+			"      </>",
+			"      )",
+				"   }",
+			"}",
+			"",
+			"export default withRouter(ProductList);",
 		],
 		"description": "Log output to console"
 	}

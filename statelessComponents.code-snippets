@@ -8,10 +8,12 @@
 	// Example:
 	"Print to console": {
 		"scope": "javascript,typescript",
-		"prefix": ["leixingpanduan"],
+		"prefix": ["wuzhuangtaizujian","statelessComponents"],
 		"body": [
-			"var stringObject = new String(\"hello world\"); ",
-			"console.log(stringObject instanceof String);   // 输出 \"true\""
+			"function StatelessComponents(props, /* context */) {",
+			"  return <div>Hello {props.name}</div>",
+			"}",
+			"  ReactDOM.render(<StatelessComponents name=\"World\" />, mountNode)",
 		],
 		"description": "Log output to console"
 	}
