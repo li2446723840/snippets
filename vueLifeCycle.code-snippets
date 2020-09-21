@@ -7,11 +7,21 @@
 	// Placeholders with the same ids are connected.
 	// Example:
 	"Print to console": {
-		"scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["cl","log"],
+		// "scope": "javascript,typescript",
+		"prefix": ["vueLifeCycle","vueshengmingzhouqi"],
 		"body": [
-			"console.log($1);",
+		"//1、挂载阶段:mounting",
+		"//   1、beforeCreate:创建实例之前",
+		"//   2、created:创建实例完成以后",
+		"//   3、beforeMount:挂载之前",
+		"//   4、mounted:挂载完成。",
+		"//2、更新阶段:updating",
+		"//   1、beforeUpdate:更新之前",
+		"//   2、updated:更新之后",
+		"//3、卸载阶段:unmounting，将vm移除，即将view与model之间的关系进行了清除。",
+		"//   1、beforeDestroy:卸载前",
+		"//   2、destroyed:卸载后",
 		],
-		"description": "console.log"
+		"description": "vue生命周期"
 	}
 }

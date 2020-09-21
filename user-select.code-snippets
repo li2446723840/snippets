@@ -8,10 +8,11 @@
 	// Example:
 	"Print to console": {
 		"scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["cl","log"],
+		"prefix": ["jinzhixuanzhongwenben","user-select"],
 		"body": [
-			"console.log($1);",
+			"user-select:none;",
+			
 		],
-		"description": "console.log"
+		"description": "禁止拖拽时选中文本"
 	}
 }

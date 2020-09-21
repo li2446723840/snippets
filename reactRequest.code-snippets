@@ -8,10 +8,19 @@
 	// Example:
 	"Print to console": {
 		"scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["cl","log"],
+		"prefix": ["reactRequest","request"],
 		"body": [
-			"console.log($1);",
+			"import request from '@/utils/request';",
+			"export async function provSystemJump(params) {",
+			"console.log(params.jumpUrl);",
+			"let url = params.jumpUrl.replace(\"/kettle\",\"/OperationalResponseServer/dataProcessing\");",
+			"return request(url, {",
+			"   method: 'POST',",
+			"   body: {...params.param},",
+			"});",
+			"}",
+
 		],
-		"description": "console.log"
+		"description": "Log output to console"
 	}
 }

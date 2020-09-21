@@ -32,6 +32,6 @@
 			"//合并",
 			"concat();//功能：合并字符。参数：要合并的字符。返回值：合并之后的字符",
 		],
-		"description": "Log output to console"
+		"description": "字符串的方法"
 	}
 }

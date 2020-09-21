@@ -7,12 +7,14 @@
 	// Placeholders with the same ids are connected.
 	// Example:
 	"Print to console": {
-		"scope": "javascript,typescript",
-		"prefix": ["leixingpanduan"],
+		"scope": "javascript,typescript,php,java,css,html",
+		"prefix": ["leixingpanduan","instanceof","typeof"],
 		"body": [
 			"var stringObject = new String(\"hello world\"); ",
-			"console.log(stringObject instanceof String);   // 输出 \"true\""
+			"console.log(typeof stringObject);//只能检测基本数据类型，在判断数组或对象时不能准确判断",
+			"console.log(stringObject instanceof String);   // 输出 \"true\",stringObject时String类型",
+			"Object.prototype.toString.call(stringObject);//可以检测所有的数据类型",
 		],
-		"description": "Log output to console"
+		"description": "判断数据类型"
 	}
 }

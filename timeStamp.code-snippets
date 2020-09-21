@@ -10,7 +10,9 @@
 		"scope": "javascript,typescript",
 		"prefix": ["timeStamp","shijianchuo"],
 		"body": [
-			"let timeStamp=new Date().getTime()",
+			"let timeStamp = new Date().getTime();",
+			"let timeStamp = +new Date();",
+			"let timeStamp = Date.now();"
 		],
 		"description": "Log output to console"
 	}
