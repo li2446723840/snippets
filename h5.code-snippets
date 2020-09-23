@@ -25,10 +25,10 @@
 			"",
 			"</body>",
 			"<script type=\"text/javascript\">",
-			"	$1",
+			"   $1",
 			"</script>",
 			"</html>",
 		],
-		"description": "Log output to console"
+		"description": "html模板"
 	}
 }

@@ -1,0 +1,11 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["li","list"],
+		"body": [
+			"li{list-style-position: outside;list-style-image: none;list-style-type:disc;}/*其样式表可以缩写为：*/li{list-style:disc outside none}",
+				
+		],
+		"description": "li的list属性的属性值"
+	}
+}

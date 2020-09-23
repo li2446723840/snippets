@@ -1,0 +1,16 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["font","ziti"],
+		"body": [
+			"/*font-family（字体族）: “Arial”、“Times New Roman”、“宋体”、“黑体”等;*/",
+			"/*font-style（字体样式）: normal（正常）、italic（斜体）或oblique（倾斜）;*/",
+			"/*font-variant (字体变化): normal（正常）或small-caps（小体大写字母）;*/",
+			"/*font-weight (字体浓淡): 是normal（正常）或bold（加粗）。有些浏览器甚至支持采用100到900之间的数字（以百为单位）;*/",
+			"/*font-size（字体大小）: 可通过多种不同单位（比如像素或百分比等）来设置, 如：12px，12pt，120%，1em*/",
+			"/*如果用 font 属性的话，就可以把几个样式进行简化，减少书的情况；font 属性的值应按以下次序书写(各个属性之间用空格隔开)：*/",
+			"/*顺序：font-style | font-variant | font-weight | font-size | line-height | font-family*/",
+		],
+		"description": "font属性、属性值、简写"
+	}
+}

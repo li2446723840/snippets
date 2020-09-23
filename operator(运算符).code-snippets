@@ -1,0 +1,11 @@
+{
+	
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["operator","yunsuanfu"],
+		"body": [
+			"//1%2是模运算bai，也就是取余数运算du。％是除法取余运算，用于整数zhi与整数运算，%作为取余运算符，dao用于把它前面的整数值或表达式除以其后面的整数值或表达式，结果为不能被后面的整数或表达式整除的最小整数，它后面的数值应该为大于1的正整数。",
+		],
+		"description": "运算符"
+	}
+}

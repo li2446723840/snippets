@@ -1,14 +1,11 @@
 {
-	// Place your 全局 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
 	"Print to console": {
 		// "scope": "javascript,typescript",
-		"prefix": ["circulate","xunhuan","tiaochuxunhuan"],
+		"prefix": [
+			"circulate",
+			"xunhuan",
+			"tiaochuxunhuan"
+		],
 		"body": [
 			"//跳出循环的两个关键字  continue  break",
 			"//continue关键字，可以跳出这次循环，直接进入下一次循环",
@@ -24,6 +21,48 @@
 			"      break;",
 			"   }",
 			"   console.log(i);//0 1 2",
+			"}",
+			"//第一种方法：使用arr.some()或者arr.every()替代",
+			"",
+			"//some()当内部return true时跳出整个循环：",
+			"var arr = [1,2,3,4,5];",
+			"var num = 3;",
+			"arr.some(function(v){",
+			"   if(v == num) {",
+			"       return true;",
+			"   }",
+			"   console.log(v);",
+			"});",
+			"",
+			"//every()当内部return false时跳出整个循环",
+			"var arr = [1,2,3,4,5];",
+			"var num = 3;",
+			"arr.every(function(v){",
+			"   if(v == num) {",
+			"       return false;",
+			"   }else{",
+			"       console.log(v);",
+			"       return true;",
+			"   }",
+			"});",
+			"",
+			"//第二种：使用try···catch捕获异常实现",
+			"try{",
+			"    var array = [\"first\",\"second\",\"third\",\"fourth\"];",
+			"    array.forEach(function(item,index){",
+			"        if(item == \"third\"){",
+			"            var a = aaaa;// first second 后就报错，就跳出循环了",
+			"            throw new Error(\"ending\");//报错，就跳出循环",
+			"        }else{",
+			"            log(item);",
+			"        }",
+			"    })",
+			"}catch(e){",
+			"    if(e.message == \"ending\"){",
+			"        log(\"结束了\") ;",
+			"    }else{",
+			"        log(e.message);",
+			"    }",
 			"}",
 		],
 		"description": "循环、跳出循环"

@@ -1,0 +1,35 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": [
+			"arrayOpen",
+			"shuzuzhankai",
+			"duixiangzhankai",
+			"objectOpen"
+		],
+		"body": [
+			"//  展开运算符 应用于数组或者对象。 一个对数组或者对象进行展开插值  一个是对数组或者对象进行局部的赋值。语法 ...对象或者数组",
+			"// 数组： 1、一个数组或者对象 指定到另一个数组或者对象的某一个位置",
+			"let arr = [1, 2, 3];",
+			"let arr2 = ['1', 'b', 'c'];",
+			"let obj = { a: 2, b: 2 };",
+			"let obj1 = { c: 3, d: 4 };",
+			"obj1 = { c: 3, ...obj, d: 4 };",
+			"// 把arr 插入arr2第二个元素之前。",
+			"arr2 = ['1', ...arr, 'b', 'c'];",
+			"console.log(arr2);//[ '1', 1, 2, 3, 'b', 'c' ]",
+			"console.log(obj1);//{ c: 3, a: 2, b: 2, d: 4 }",
+			"// 另一个在解构的过程中，将剩余的值赋给一个变量;",
+			"let [a, b, ...c] = [1, 3, 4, 5, 6];",
+			"let { a1, b1, ...c1 } = { b1: 3, a1: 2, f: 3, d: 5 };",
+			"console.log(c);//[ 4, 5, 6 ]",
+			"console.log(c1);//{ f: 3, d: 5 }",
+			"// 因为在对象中我们在我们赋值传递是内存地址，在修改其中一个变量的时候会导致另一个变量的发生改变。展开运算符就不会有这个问题，他直接将值展开赋给新的变量；",
+			"let obja = { a: 2, c: 3 };",
+			"let objb = { ...obja };",
+			"objb.a = 12;",
+			"console.log(obja, objb);//{ a: 2, c: 3 } { a: 12, c: 3 }",
+		],
+		"description": "数组、对象展开"
+	}
+}

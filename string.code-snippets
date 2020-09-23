@@ -1,13 +1,6 @@
 {
-	// Place your 全局 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
 	"Print to console": {
-		"scope": "javascript,typescript,php,java,css,html",
+		// "scope": "javascript,typescript,php,java,css,html",
 		"prefix": "string",
 		"body": [
 			"//分割",
@@ -21,7 +14,7 @@
 			"",
 			"//查",
 			"indexOf();//功能：根据指定子串,从左向右查询字符，查询索引参数：1要查询的子串，2从哪个索引开始查询，可选返回值：索引 或 -1（没有查找到）",
-			"charAt();//功能：根据索引取字符。参数：索引。返回值：取到的字符，没有取到，就是空字符:""",
+			"charAt();//功能：根据索引取字符。参数：索引。返回值：取到的字符，没有取到，就是空字符:\"\"",
 			"lastIndexOf();//功能：从右向左查询字符，返回索引。参数：要走查找的子串。返回值：索引，或-1",
 			"",
 			"//截取",
