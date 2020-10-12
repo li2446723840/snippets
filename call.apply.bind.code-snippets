@@ -1,0 +1,15 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["call","apply","bind"],
+		"body": [
+			"function fn(a,b,c){",
+			"   console.log(a,b,c);",
+			"}",
+			"fn.call(this,1,2,3);      //1,2,3          //立即调用     参数：顺序传入",
+			"fn.apply(this,[1,2,3]);   //1,2,3          //立即调用     参数：数组",
+			"fn.bind(this,1,2,3)();    //1,2,3          //等待调用     参数：顺序传入",
+		],
+		"description": "call、apply、bind的区别"
+	}
+}

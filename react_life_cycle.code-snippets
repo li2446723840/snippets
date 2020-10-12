@@ -1,7 +1,7 @@
 {
 	"Print to console": {
 		// "scope": "javascript,typescript,php,java,css,html,react",
-		"prefix": ["reactlifeCycle","reactshengmingzhouqihanshu"],
+		"prefix": ["reactlifeCycle","reactshengmingzhouqihanshu","reactxindeshengmingzhouqihanshu","reactnewlifecycle"],
 		"body": [
 			"//会在组件挂载后（插入 DOM 树中）立即调用。依赖于 DOM 节点的初始化应该放在这里。如需通过网络请求获取数据，此处是实例化请求的好地方。这个方法是比较适合添加订阅的地方。如果添加了订阅，请不要忘记在 componentWillUnmount() 里取消订阅",
 			"componentDidMount(){",
@@ -17,9 +17,9 @@
 			"}",
 			"//主要用于性能优化(部分更新)，一用于控制组件重新渲染的生命周期，由于在 react 中，setState 以后，state 发生变化，组件会进入重新渲染的流程，在这里 return false 可以阻止组件的更新，因为 react 父组件的重新渲染会导致其所有子组件的重新渲染，这个时候其实我们是不需要所有子组件都跟着重新渲染的，因此需要在子组件的该生命周期中做判断。",
 			"shouldComponentUpdate(nextProps,nextState)",
-			"//如果props传入的内容不需要影响到你的state，那么就需要返回一个null，这个返回值是必须的，所以尽量将其写到函数的末尾。",
+			"//如果props传入的内容不需要影响到你的state，那么就需要返回一个null，这个返回值是必须的，所以尽量将其写到函数的末尾。会在初始化和update时触发，用于替换componentWillReceiveProps，可以用来控制 props 更新 state 的过程；它返回一个对象表示新的 state；如果不需要更新，返回 null 即可",
 			" getDerivedStateFromProps(nextProps, prevState)",
-			"//getSnapshotBeforeUpdate 会在最终的 render 之前被调用，也就是说在 getSnapshotBeforeUpdate 中读取到的 DOM 元素状态是可以保证与 componentDidUpdate 中一致的。",
+			"//getSnapshotBeforeUpdate 会在最终的 render 之前被调用，也就是说在 getSnapshotBeforeUpdate 中读取到的 DOM 元素状态是可以保证与 componentDidUpdate 中一致的。用于替换 componentWillUpdate，该函数会在update后 DOM 更新前被调用，用于读取最新的 DOM 数据，返回值将作为 componentDidUpdate 的第三个参数",
 			" getSnapshotBeforeUpdate(prevProps, prevState)",
 			"// 对错误进行处理",
 			" componentDidCatch()",
@@ -36,6 +36,6 @@
 			"",
 			"}",
 		],
-		"description": "react生命周期"
+		"description": "react新的生命周期"
 	}
 }

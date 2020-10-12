@@ -1,0 +1,20 @@
+{
+	"Print to console": {
+		//"scope": "javascript,typescript",
+		"prefix": "vuex",
+		"body": [
+			"import Vuex from 'vuex'",
+			"const state = {}",
+			"const mutations = {}",
+			"const actions = {}",
+			"const getters = {}",
+			"const modules = {}",
+			"export default new Vuex.Store{",
+			"   state,",
+			"   mutations,",
+			"   actions",
+			"}",
+		],
+		"description": "vuex"
+	}
+}

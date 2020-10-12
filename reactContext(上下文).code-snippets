@@ -1,0 +1,10 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["reactcontext","context"],
+		"body": [
+			"const {Provider, Consumer} = React.createContext(defaultValue);",
+		],
+		"description": "React Context上下文传值"
+	}
+}

@@ -18,6 +18,12 @@
 			"var reg = /\\s/g;",
 			"var res = text.replace(reg,\"\")",
 			"console.log(res);//我是中国人iamchinese",
+			"",
+			"//支持正则表达式的 String 对象的方法",
+			"search    检索与正则表达式相匹配的值。",
+			"match     找到一个或多个正则表达式的匹配。",
+			"replace   替换与正则表达式匹配的子串。",
+			"split     把字符串分割为字符串数组。",
 		],
 		"description": "正则表达式、字符串匹配、提取字符串、字符串替换"
 	}

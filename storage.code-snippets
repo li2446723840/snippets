@@ -1,0 +1,15 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": "storage",
+		"body": [
+			"//方法                  //描述",
+			"Storage.key()         //接收一个数值n作为参数，并返回存储中的第n个键名",
+			"Storage.getItem()     //接收一个键名作为参数，返回键名对应的值",
+			"Storage.setItem()     //接收一个键名和值作为参数，将会把键值对添加到存储中，如果键名存在，则更新其对应数据",
+			"Storage.removeItem()  //接收一个键名作为参数，并把该键名从存储中删除",
+			"Storage.clear()       //该方法会清空存储中的所有键名",
+		],
+		"description": "本地存储。Storage可以是localStorage也可以是seesionStorage"
+	}
+}
