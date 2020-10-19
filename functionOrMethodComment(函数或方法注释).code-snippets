@@ -1,0 +1,23 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": [
+      "functionOrMethodComment",
+      "notes",
+      "comment",
+      "zhushi",
+      "fangfazhushi",
+      "hanshuzhushi"
+    ],
+    "body": [
+      "/**",
+      "* @description 这是一个求和函数",
+      "* @todo 功能待完善",
+      "* @param  {Number} a 第一个数字",
+      "* @param  {Number} b 第二个数字",
+      "* @return {Number}   返回两个数字之和",
+      "*/"
+    ],
+    "description": "函数或方法注释"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": [
+      "fileCommentStatement",
+      "notes",
+      "fileComments",
+      "comment",
+      "zhushi",
+      "wenjianzhushi"
+    ],
+    "body": [
+      "/**",
+      "* @description: 说明文字",
+      "* @author: 张三",
+      "* @update: 更新内容 by 李四 2013-04-13",
+      "*/"
+    ],
+    "description": "文件注释声明"
+  }
+}
