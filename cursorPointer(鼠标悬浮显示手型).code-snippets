@@ -1,0 +1,15 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": [
+      "shouxing",
+      "shou",
+      "cursor",
+      "pointer",
+      "guangbiao",
+      "zhizheng"
+    ],
+    "body": ["cursor: pointer;"],
+    "description": "光标：1、鼠标悬浮显示手型"
+  }
+}
