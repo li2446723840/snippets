@@ -1,0 +1,23 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["vue-router", "router"],
+    "body": [
+      "// 解决重复点击路由报错问题",
+      "import Router from \"vue-router\";",
+      "",
+      "//使用push跳转",
+      "const originalPush = Router.prototype.push;",
+      "Router.prototype.push = function push(location) {",
+      "  return originalPush.call(this, location).catch((err) => err);",
+      "};",
+      "",
+      "//使用replace跳转",
+      "const VueRouterReplace = Router.prototype.replace;",
+      "Router.prototype.replace = function replace(to) {",
+      "  return VueRouterReplace.call(this, to).catch((err) => err);",
+      "};"
+    ],
+    "description": "解决重复点击路由报错问题"
+  }
+}
