@@ -1,0 +1,11 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["max", "min", "zhengshu", "ineger"],
+    "body": [
+      "let maxSafeInteger = Number.MAX_SAFE_INTEGER;//(2^53-1)",
+      "let minSafeInteger = Number.MIN_SAFE_INTEGER;//-(2^53-1)"
+    ],
+    "description": "最大最小安全整数"
+  }
+}

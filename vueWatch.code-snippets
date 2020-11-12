@@ -16,6 +16,7 @@
       "      console.log(newValue === oldValue);//true，说明引用地址是一样的  ",
       "    },",
       "    deep: true,//启动深度侦听",
+      "    immediate: true // 该回调将会在侦听开始之后被立即调用",
       "  }",
       "}"
     ],

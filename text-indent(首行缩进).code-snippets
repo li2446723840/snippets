@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["text-indent", "shouhangsuojin"],
+    "body": ["text-indent: 20px;"],
+    "description": "首行缩进"
+  }
+}

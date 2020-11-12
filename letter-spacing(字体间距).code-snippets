@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["letter-spacing", "jianju", "zitijianju"],
+    "body": ["letter-spacing: 1px;"],
+    "description": "字体间距"
+  }
+}
