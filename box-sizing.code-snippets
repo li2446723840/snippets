@@ -1,0 +1,13 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["box-sizing", "guaiyihe", "hemoxing"],
+    "body": [
+      "box-sizing: border-box;",
+      "//content-box： 默认值，border和padding不算到width范围内，可以理解为是W3c的标准模型(default)",
+      "//border-box：border和padding划归到width范围内，可以理解为是IE的怪异盒模型",
+      "//padding-box：将padding算入width范围"
+    ],
+    "description": "box-sizing属性值。盒模型"
+  }
+}

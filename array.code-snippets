@@ -53,7 +53,7 @@
       "});",
       "ArrayObject.every();                         //方法先遍历数组，判断所有元素是否满足条件，返回布尔值",
       "var arr = [2,4,6,10,15,21];",
-      "var f = arr.some(function(element, index, array){",
+      "var f = arr.every(function(element, index, array){",
       "    return element > 10;",
       "});",
       "ArrayObject.find();                          //方法返回数组中满足条件的<font color=\"red\">第一个值</font>，找不到元素则返回undefined",

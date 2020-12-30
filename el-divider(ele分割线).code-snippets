@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["elfengexian", "fengexian"],
+    "body": ["<el-divider></el-divider>"],
+    "description": "ele分割线"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["hasOwnproperty", "in", "object", "objectAttr"],
+    "body": [
+      "console.log(objectAttr in object); // 会遍历原型链上的属性",
+      "console.log(object.hasOwnProperty(objectAttr));",
+      "console.log(Object.keys(object).includes(objectAttr));"
+    ],
+    "description": "判断对象是否包含某个属性，推荐使用hasOwnProperty，因为in会遍历原型链上的属性。"
+  }
+}

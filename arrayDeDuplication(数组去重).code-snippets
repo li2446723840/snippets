@@ -1,0 +1,19 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["shuzuquchong", "quchong"],
+    "body": [
+      "let arr = [1, 2, 3, 4, 4, 1];",
+      "let newArr = arr.reduce((pre, cur) => {",
+      "  if (!pre.includes(cur)) {",
+      "    //判断当前元素是否在返回值中",
+      "    return pre.concat(cur); //当不在返回值时，合并当前元素",
+      "  } else {",
+      "    return pre; //返回之前的返回值",
+      "  }",
+      "}, []);",
+      "console.log(newArr); // [1, 2, 3, 4]"
+    ],
+    "description": "数组去重"
+  }
+}
