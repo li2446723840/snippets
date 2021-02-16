@@ -1,12 +1,8 @@
 {
-	
-	"Print to console": {
-		// "scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["suijishu","randomNumber"],
-		"body": [
-			"Math.floor(Math.random()*10)",
-
-		],
-		"description": "随机数"
-	}
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["suijishu", "randomNumber"],
+    "body": ["Math.floor(Math.random()*10)"],
+    "description": "随机数"
+  }
 }

@@ -36,6 +36,7 @@
       "//ES6新增数组方法",
       "ArrayObject.map(function(){});        //将数组通过函数处理后返回一个新数组",
       "ArrayObject.indexOf();                //返回指定的元素(或字符串)中首次出现的位置",
+      "ArrayObject.lastIndexOf();                //返回指定的元素(或字符串)中最后出现的位置",
       "ArrayObject.forEach();                      //遍历数组",
       "ArrayObject.reduce();                       //归并",
       "ArrayObject.filter();                       //过滤----将数组中所有满足条件的元素组成一个新数组返回,不改变原数组",

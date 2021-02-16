@@ -1,7 +1,7 @@
 {
   "Print to console": {
     // "scope": "javascript,typescript",
-    "prefix": "shenglvehao",
+    "prefix": ["shenglvehao", "shengluehao"],
     "body": [
       "<!-- 单行文本显示省略号 -->",
       "div {",
@@ -9,7 +9,7 @@
       "  overflow: hidden;",
       "  text-overflow: ellipsis;",
       "}",
-      "<!-- 多行文本显示省略号，只兼容weblit内核浏览器 -->",
+      "<!-- 多行文本显示省略号，只兼容weblit内核浏览器，-webkit-line-clamp显示多少行 -->",
       "div {",
       "  overflow: hidden;",
       "  display: -webkit-box;",

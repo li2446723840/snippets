@@ -1,7 +1,7 @@
 {
   "Print to console": {
     // "scope": "javascript,typescript",
-    "prefix": ["box-sizing", "guaiyihe", "hemoxing"],
+    "prefix": ["guaiyihe", "hemoxing"],
     "body": [
       "box-sizing: border-box;",
       "//content-box： 默认值，border和padding不算到width范围内，可以理解为是W3c的标准模型(default)",
