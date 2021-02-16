@@ -1,7 +1,7 @@
 {
   "Print to console": {
     // "scope": "javascript,typescript",
-    "prefix": ["event", "jsevent", "jsshijian"],
+    "prefix": ["event", "jsevent", "jsshijian", "shijian"],
     "body": [
       "onabort //图像加载被中断",
       "onblur //元素失去焦点",

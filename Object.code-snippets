@@ -1,12 +1,12 @@
 {
-	"Print to console": {
-		// "scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["Object"],
-		"body": [
-			"Object.keys(obj);//将obj对象的属性提取出来组成一个数组",
-			"Object.values(obj);//将obj对象的属性值提取出来组成一个数组",
-			"val in obj;//检查obj对象中是否有val属性，遍历obj对象",
-		],
-		"description": "Object方法"
-	}
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["Object"],
+    "body": [
+      "Object.keys(obj);//将obj对象的属性提取出来组成一个数组",
+      "Object.values(obj);//将obj对象的属性值提取出来组成一个数组",
+      "val in obj;//检查obj对象中是否有val属性，遍历obj对象,但是会遍历原型链上的属性，推荐使用hasOwnProperty"
+    ],
+    "description": "Object方法"
+  }
 }

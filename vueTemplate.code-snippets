@@ -4,7 +4,7 @@
     "body": [
       "<!-- ",
       "  @description: 说明文字",
-      "  @author: 张三",
+      "  @author: 健力",
       "  @update: 更新内容 by 李四 2013-04-13",
       " -->",
       "<!-- <my-component v-if=\"show\" v-show=\"show\" class=\"title\" :content=\"data\" @click=\"handleClick\" @close=\"onClose\" /> -->",
