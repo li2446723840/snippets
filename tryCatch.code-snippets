@@ -1,0 +1,18 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["tryCatch", "finally"],
+    "body": [
+      "try {",
+      "",
+      "}",
+      "catch (error) {",
+      "",
+      "}",
+      "finally {",
+      "",
+      "}"
+    ],
+    "description": "try、catch、finally语句尝试执行try中的语句，如果失败执行catch中的语句。最后执行finally中的语句，finally语句一定会执行。如果从finally块中返回一个值，那么这个值将会成为整个try-catch-finally的返回值，无论是否有return语句在try和catch中。这包括在catch块里抛出的异常"
+  }
+}

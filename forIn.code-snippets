@@ -1,0 +1,24 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": "forIn",
+    "body": [
+      "function AAA() {",
+      "  this.aaa = \"aaa\";",
+      "}",
+      "function BBB() {",
+      "  this.bbb = \"bbb\";",
+      "}",
+      "BBB.prototype = new AAA;",
+      "function CCC() {",
+      "  this.ccc = \"ccc\";",
+      "}",
+      "CCC.prototype = new BBB;",
+      "const res = new CCC;",
+      "for(let item in res) {",
+      "  console.log(item); // ccc bbb aaa",
+      "}"
+    ],
+    "description": "for in 遍历会遍历原型链上的可枚举元素"
+  }
+}
