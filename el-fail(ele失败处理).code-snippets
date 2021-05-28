@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["shibai", "el-shibai", "error"],
+    "body": ["this.\\$message.error($1);"],
+    "description": "ele失败提示"
+  }
+}

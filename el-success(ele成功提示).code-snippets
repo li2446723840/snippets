@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["chenggong", "el-chenggong", "success"],
+    "body": ["this.\\$message.success($1);"],
+    "description": "ele成功提示"
+  }
+}
