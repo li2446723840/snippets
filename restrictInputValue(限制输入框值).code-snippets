@@ -1,0 +1,13 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["inputValue"],
+    "body": [
+      "// 为空 或 (大于等于0的整数并且不为空格)",
+      "if (!e.length || (Number.isInteger(Number(e)) && Number(e) >= 0 && !e.includes(\".\") && !e.includes(\" \")) ) {",
+      "this.bindValue = e;",
+      "}"
+    ],
+    "description": "使用@input事件绑定事件，使用value绑定值"
+  }
+}
