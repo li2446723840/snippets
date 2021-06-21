@@ -1,0 +1,36 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["jisuanshuzucengji", "shuzu", "array", "arr"],
+    "body": [
+      "let arr = [",
+      "  {",
+      "    c: [",
+      "      { c: [{ d: 4 }], d: 3 },",
+      "      { c: [{ c: [{ d: 4 }], d: 8 }], d: 3 },",
+      "      { c: [{ c: [{ d: 4 }], d: 8 }], d: 3 },",
+      "      { c: [{ c: [{ d: 4 }], d: 8 }], d: 3 },",
+      "      { c: [{ c: [{ d: 4 }], d: 8 }], d: 3 }",
+      "    ],",
+      "    d: 1",
+      "  }",
+      "];",
+      "let res = 1;",
+      "function fn(param, num = 0) {",
+      "  if (!Array.isArray(param)) {",
+      "    return;",
+      "  }",
+      "  num++;",
+      "  res < num && (res = num);",
+      "  param.forEach(item => {",
+      "    if (Array.isArray(item.c)) {",
+      "      fn(item.c, num);",
+      "    }",
+      "  });",
+      "}",
+      "fn(arr);",
+      "console.log(res);"
+    ],
+    "description": "计算数组层级"
+  }
+}
