@@ -1,6 +1,6 @@
 {
   "Print to console": {
-    "prefix": "vue",
+    "prefix": ["vue", "vueTemplate", "vuemoban", "moban"],
     "body": [
       "<template>",
       "  <div>$1</div>",
@@ -10,6 +10,9 @@
       "export default {",
       "  data() {",
       "    return {};",
+      "  },",
+      "  created() {},",
+      "  methods: {}",
       "  }",
       "};",
       "</script>",
