@@ -3,9 +3,10 @@
 		// "scope": "javascript,typescript",
 		"prefix": ["yemiantiaozhuan", "tiaozhuan", "jump", "replace", "href"],
 		"body": [
-      "window.open(); // 新窗口打开",
-      "window.location.replace(\"url\"); // 类似 HTTP 重定向。将地址替换成新 url，该方法通过指定 URL 替换当前缓存在历史里（客户端）的项目，因此当使用 replace 方法之后，你不能通过\"前进\"和\"后退\"来访","问已经被替换的URL，这个特点对于做一些过渡页面非常有用！",
       "window.location.href=\"url\"; // 类似点击 a 标签的链接。跳转到指定的 url。",
+      "window.location.replace(\"url\"); // 类似 HTTP 重定向。将地址替换成新 url，该方法通过指定 URL 替换当前缓存在历史里（客户端）的项目，因此当使用 replace 方法之后，你不能通过\"前进\"和\"后退\"来访","问已经被替换的URL，这个特点对于做一些过渡页面非常有用！",
+      "window.localtion.assign(URL); // 本窗口的页面转为为一个新的页面URL，与上一方法类似，但此方法可回退至上一页面",
+      "window.open(\"url\", \"_blank\"); // 在一个新的窗口打开一个新的页面，第二个参数可选。_blank - URL加载到一个新的窗口。这是默认。_parent - URL加载到父框架。_self - URL替换当前页面。_top - URL替换任何可加载的框架集。name - 窗口名称",
 		],
 		"description": "JavaScript 实现页面跳转重定向"
 	}
