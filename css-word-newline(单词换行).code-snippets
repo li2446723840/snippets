@@ -6,7 +6,7 @@
       "word-wrap: break-word;",
       "// normal:只在允许的断字点换行（浏览器保持默认处理）。",
       "// break-word在长单词或 URL 地址内部进行换行。",
-      "word-break: normal;",
+      "word-break: break-all;",
       "// normal 使用浏览器默认的换行规则。",
       "// break-all 允许在单词内换行。",
       "// keep-all 只能在半角空格或连字符处换行。"
