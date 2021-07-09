@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["jinggao", "el-jinggao", "warning"],
+    "body": ["this.\\$message.warning($1);"],
+    "description": "ele警告提示"
+  }
+}

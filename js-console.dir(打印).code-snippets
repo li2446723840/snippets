@@ -1,0 +1,11 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["dir", "cd", "con", "dayin"],
+    "body": [
+      // "//打印对象的所有属性和方法",
+      "console.dir('$1');"
+    ],
+    "description": "打印对象的所有属性和方法"
+  }
+}

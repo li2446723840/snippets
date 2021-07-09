@@ -1,0 +1,10 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["browsers", "liulanqijianrong"], //设置编译时自动兼容的浏览器
+    "body": [
+      "\"browserslist\":[\"last 5 version\",\"iOS > 7\",\"Firefox > 20\",\"Goole > 50\"],"
+    ],
+    "description": "设置编译时自动兼容的浏览器"
+  }
+}

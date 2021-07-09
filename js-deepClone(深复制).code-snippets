@@ -1,0 +1,15 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["deepClone", "shenfuzhi"],
+    "body": [
+      "第一种：缺点无法复制函数，函数会自动过滤",
+      "function deepClone(obj){",
+      "   let _obj = JSON.parse(JSON.stringify(obj));",
+      "   return _obj;",
+      "}",
+      "第二种 递归遍历"
+    ],
+    "description": "深复制"
+  }
+}

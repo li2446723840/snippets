@@ -1,0 +1,19 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["codeSnippet", "daimapianduan", "snippet"],
+    "body": [
+      "{",
+      "    \"Print to console\": {",
+      "        //\"scope\": \"javascript,typescript\",",
+      "        \"prefix\": \"log\",",
+      "        \"body\": [",
+      "            \"$1\",",
+      "        ],",
+      "        \"description\": \"说明描述\"",
+      "    }",
+      "}"
+    ],
+    "description": "自定义代码片段"
+  }
+}

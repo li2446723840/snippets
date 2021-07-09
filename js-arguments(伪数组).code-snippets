@@ -1,0 +1,16 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["arguments", "weishuzu", "leishuzu"],
+    "body": [
+      "//得到伪数组",
+      "let arr = document.getElementsByName(\"item\");",
+      "//伪数组转数组",
+      "let brr = Array.prototype.slice.call(arr);",
+      "// 您还可以使用Array.from()方法或扩展运算符将参数转换为真实数组：",
+      "var args = Array.from(arguments);",
+      "var args = [...arguments];"
+    ],
+    "description": "伪数组(类数组)转数组"
+  }
+}
