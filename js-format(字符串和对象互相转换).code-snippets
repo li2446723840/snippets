@@ -1,0 +1,17 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["format", "geshizhuanhuan"], //格式转换
+    "body": [
+      "//js中",
+      "// todo JSON.toStringify()方法是干什么的？？？？？？？",
+      "JSON.stringify();      //将json对象转为字符串",
+      "JSON.parse();            //将字符串转为json对象",
+      "",
+      "//php中",
+      "json_encode(\\$arr);                 //将数组转为字符串",
+      "json_decode(json字符串,true);        //将json字符串转为数组,true可以简写为1，如果没有true就转为了php对象"
+    ],
+    "description": "格式转换"
+  }
+}

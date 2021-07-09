@@ -1,7 +1,7 @@
 {
   "Print to console": {
     // "scope": "javascript,typescript",
-    "prefix": "number",
+    "prefix": ["number", "shuzi"],
     "body": [
       "let num = 3.141592654",
       "console.log(num.toFixed(2));// 3.94   //保留小数点后几位",

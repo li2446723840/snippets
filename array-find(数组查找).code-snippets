@@ -1,0 +1,27 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["find", "cha", "findIndex"],
+    "body": [
+      "//数组的方法",
+      "//find",
+      "const arr = [1,2,3,4,4];",
+      "// 查找元素的值为4，只找第一个符合的元素，找不到返回undefined",
+      "// const status = arr.find(function (v,i,arr2) {",
+      "//     console.log(v,i,arr2);",
+      "//     return v === 4;",
+      "// })",
+      "",
+      "//findIndex",
+      "// 找第一个符合条件的元素，如果没有返回-1",
+      "// const status = arr.findIndex(function (v,i,arr2) {",
+      "//     console.log(v,i,arr2);",
+      "//     return v === 4;",
+      "// })",
+      "",
+      "const status = arr.findIndex(v=>v===4)",
+      "console.log(status)"
+    ],
+    "description": "数组查找"
+  }
+}
