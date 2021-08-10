@@ -1,0 +1,28 @@
+{
+  "Print to console": {
+    // "scope": "css",
+    "prefix": ["scroll", "custom", "customScroll", "custom-scroll"],
+    "body": [
+      "// 自定义滚动条",
+      ".custom-scroll-style {",
+      "  ::-webkit-scrollbar {",
+      "    width: 6px;",
+      "    height: 6px;",
+      "    display: initial !important;",
+      "    background: transparent;",
+      "  }",
+      "  ::-webkit-scrollbar-thumb {",
+      "    background: transparent;",
+      "    border-radius: 4px;",
+      "  }",
+      "  :hover::-webkit-scrollbar-thumb {",
+      "    background: hsla(0, 0%, 53%, 0.4);",
+      "  }",
+      "  :hover::-webkit-scrollbar-track {",
+      "    background: hsla(0, 0%, 53%, 0.1);",
+      "  }",
+      "}"
+    ],
+    "description": "自定义滚动条样式"
+  }
+}

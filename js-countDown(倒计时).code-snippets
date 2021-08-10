@@ -1,0 +1,23 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript,vue,jsx",
+    "prefix": ["daojishi", "countDown"],
+    "body": [
+      "let timeOut = 1000;",
+      "let timer = null;",
+      "let time = 0;",
+      "if (timeOut > 0) {",
+      "  clearInterval(timer);",
+      "  time = timeOut;",
+      "  timer = setInterval(() => {",
+      "    if (time < 0 || !time) {",
+      "      clearInterval(timer);",
+      "      return;",
+      "    }",
+      "    time--;",
+      "  }, 1000);",
+      "}"
+    ],
+    "description": "倒计时"
+  }
+}

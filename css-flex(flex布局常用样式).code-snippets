@@ -1,0 +1,12 @@
+{
+  "Print to console": {
+    // "scope": "javascript",
+    "prefix": ["flex", "dja"],
+    "body": [
+      "display: flex;",
+      "justify-content: space-between;",
+      "align-items: center;"
+    ],
+    "description": "常用的flex布局样式"
+  }
+}
