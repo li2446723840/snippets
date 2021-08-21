@@ -1,0 +1,13 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["countDown", "daojishi", "shifenmiao", "countdown"],
+    "body": [
+      "let time = 3671;",
+      "let hour = Math.floor(time / 3600);",
+      "let minute = Math.floor(time / 60) % 60;",
+      "let second = time % 60;"
+    ],
+    "description": "根据秒数获取倒计时时分秒"
+  }
+}

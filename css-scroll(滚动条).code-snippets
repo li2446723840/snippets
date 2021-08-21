@@ -1,0 +1,8 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["overflow", "scroll"],
+    "body": ["overflow: overlay; // 与auto类似，但是滚动条不占位置"],
+    "description": "滚动条样式"
+  }
+}
