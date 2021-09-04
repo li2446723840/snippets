@@ -1,0 +1,16 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["java", "request"],
+    "body": [
+      "let params = {};",
+      "let { code, data, msg } = await javaRequest(params);",
+      "if (code === 0) {",
+      "  console.log(data, \"data\");",
+      "} else {",
+      "  this.\\$message.error(msg);",
+      "}"
+    ],
+    "description": "处理java请求"
+  }
+}

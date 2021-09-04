@@ -1,0 +1,16 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["php", "request"],
+    "body": [
+      "let params = {};",
+      "let { code, data, message } = await phpRequest(params);",
+      "if (code === 2000) {",
+      "  console.log(data, \"data\");",
+      "} else {",
+      "  this.\\$message.error(message);",
+      "}"
+    ],
+    "description": "处理php请求"
+  }
+}

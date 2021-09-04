@@ -34,6 +34,13 @@
       "      return { message: 'hello' }",
       "    }",
       "  }",
+      "  propG: {",
+      "    default: 12,",
+      "    // 自定义校验 返回值为true则验证不通过，报错",
+      "    validator: (val) => {",
+      "     return [1, 2, 3, 4, 5].indexOf(value) !== -1",
+      "    }",
+      "  }",
       "}"
     ],
     "description": "vue的props规则"

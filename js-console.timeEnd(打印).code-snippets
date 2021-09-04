@@ -1,8 +1,0 @@
-{
-  "Print to console": {
-    // "scope": "javascript,typescript",
-    "prefix": "ce",
-    "body": ["console.timeEnd();"],
-    "description": "计时器"
-  }
-}

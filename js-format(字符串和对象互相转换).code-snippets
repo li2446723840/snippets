@@ -1,6 +1,6 @@
 {
   "Print to console": {
-    "scope": "javascript,typescript,php,java,css,html",
+    // "scope": "javascript,typescript,php,java,css,html",
     "prefix": ["format", "geshizhuanhuan"], //格式转换
     "body": [
       "//js中",

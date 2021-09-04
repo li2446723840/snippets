@@ -1,28 +1,28 @@
 {
-	"Print to console": {
-		"scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["ergodic","bianli"],
-		"body": [
-			"//对象没有长度length，所以不能用for循环，",
-			"//故用for in 遍历 例：",
-			"var obj = {};",
-			"for(var attr in obj){",
-			"    console.log(obj[attr]);//打印对象中的所有属性值",
-			"}",
-			"",
-			"//for…in是遍历数组、对象的key",
-			"//for…of是遍历数组的value，不能用来遍历对象",
-			"var obj = {};",
-			"for(var attr in obj){",
-			"    console.log(attr);//打印对象中的所有属性值",
-			"}",
-			"array.forEach(function(currentValue, index, arr){},thisValue);",
-			"//currentValue  必需。当前元素",
-			"//index         可选。当前元素的索引值。",
-			"//arr           可选。当前元素所属的数组对象。",
-			"//thisValue     可选。传递给函数的值一般用 'this' 值。",
-			"//如果这个参数为空， 'undefined' 会传递给 'this' 值",
-		],
-		"description": "遍历对象、数组"
-	}
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["ergodic", "bianli"],
+    "body": [
+      "//对象没有长度length，所以不能用for循环，",
+      "//故用for in 遍历 例：",
+      "var obj = {};",
+      "for(var attr in obj){",
+      "    console.log(obj[attr]);//打印对象中的所有属性值",
+      "}",
+      "",
+      "//for…in是遍历数组、对象的key",
+      "//for…of是遍历数组的value，不能用来遍历对象",
+      "var obj = {};",
+      "for(var attr in obj){",
+      "    console.log(attr);//打印对象中的所有属性值",
+      "}",
+      "array.forEach(function(currentValue, index, arr){},thisValue);",
+      "//currentValue  必需。当前元素",
+      "//index         可选。当前元素的索引值。",
+      "//arr           可选。当前元素所属的数组对象。",
+      "//thisValue     可选。传递给函数的值一般用 'this' 值。",
+      "//如果这个参数为空， 'undefined' 会传递给 'this' 值"
+    ],
+    "description": "遍历对象、数组"
+  }
 }

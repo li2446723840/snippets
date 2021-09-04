@@ -1,0 +1,14 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["jiaoyan", "validate", "form"],
+    "body": [
+      "this.\\$refs[\"form\"].validate(async valid => {",
+      "  if (valid) {",
+      "    $1",
+      "  }",
+      "});"
+    ],
+    "description": "element表单校验"
+  }
+}

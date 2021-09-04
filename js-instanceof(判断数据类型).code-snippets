@@ -1,6 +1,6 @@
 {
   "Print to console": {
-    "scope": "javascript,typescript,php,java,css,html",
+    // "scope": "javascript,typescript,php,java,css,html",
     "prefix": ["leixingpanduan", "instanceof", "typeof"],
     "body": [
       "var stringObject = new String(\"hello world\"); ",
