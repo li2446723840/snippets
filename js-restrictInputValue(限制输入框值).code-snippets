@@ -3,8 +3,9 @@
     // "scope": "javascript,typescript",
     "prefix": ["inputValue", "input", "shurukuangxianzhi"],
     "body": [
-      "// 为空 或 (大于等于0的整数并且不为空格)",
-      "if (!e.length || (Number.isInteger(Number(e)) && Number(e) >= 0 && !e.includes(\".\") && !e.includes(\" \")) ) {",
+      "// 两位小数",
+      "let ruleRes = /^(\\d{1,8})(\\.\\d{0,2})?$/.test(e);",
+      "if (!e || ruleRes) {",
       "[绑定值] = e;",
       "}"
     ],
