@@ -1,0 +1,22 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["try", "java", "request"],
+    "body": [
+      "this.loading = true;",
+      "try {",
+      "  let params = {};",
+      "  let { code, data, msg } = await $1(params);",
+      "  this.loading = false;",
+      "  if (code === 0) {",
+      "    console.log(data, \"data\");",
+      "  } else {",
+      "    this.\\$message.error(msg);",
+      "  }",
+      "} catch (err) {",
+      "  this.loading = false;",
+      "}"
+    ],
+    "description": "处理java请求，try/catch版"
+  }
+}

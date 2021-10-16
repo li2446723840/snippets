@@ -4,7 +4,7 @@
     "prefix": ["php", "request"],
     "body": [
       "let params = {};",
-      "let { code, data, message } = await phpRequest(params);",
+      "let { code, data, message } = await $1(params);",
       "if (code === 2000) {",
       "  console.log(data, \"data\");",
       "} else {",
