@@ -1,17 +1,27 @@
 {
-	"Print to console": {
-		// "scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["table","biaoge"],
-		"body": [
-			"<!-- 第一种写法 -->",
-			"<table border=1 align='center' cellspacing=\"0\" cellpadding=\"0\">",
-        	"    $1",
-			"</table>",
-			"<!-- 第二种写法 -->",
-			"<style>table {border-collapse: collapse;}table, td, th {border: 1px solid black;}</style>",
-			"<table><tr><td>aaa</td><td>bbb</td></tr><tr><td>ccc</td><td>dddd</td></tr></table>",
-			
-		],
-		"description": "表格"
-	}
+  "Print to console": {
+    // "scope": "javascript,typescript,php,java,css,html",
+    "prefix": ["table", "biaoge"],
+    "body": [
+      "<!-- 第一种写法，这种写法的h5页面在手机端展示会有兼容问题，1、被合并的单元格边框会变窄。2、单元格之间会有一像素的空格 -->",
+      "<table border=1 align='center' cellspacing=\"0\" cellpadding=\"0\">",
+      "    $1",
+      "</table>",
+      "<!-- 第二种写法，推荐第二种写法 -->",
+      "<style>table {border-collapse: collapse;}table, td, th {border: 1px solid black;}</style>",
+      "<table>",
+      "  <thead>",
+      "    <tr>",
+      "      <th></th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <td></td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>"
+    ],
+    "description": "表格，请使用第二种写法"
+  }
 }

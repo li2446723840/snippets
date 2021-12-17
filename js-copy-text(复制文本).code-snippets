@@ -1,0 +1,34 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["copy", "copyText"],
+    "body": [
+      "function copy(callback) {",
+      "  if(document.execCommand('Copy')){",
+      "    //创建input",
+      "    var inputZ = document.createElement('input');",
+      "    //添加Id,用于后续操作",
+      "    inputZ.setAttribute('id','inputCopy');",
+      "    inputZ.setAttribute(\"style\", \"position: absolute; top: -999px;\");",
+      "    //获取当前链接",
+      "    inputZ.value = window.location.href;",
+      "    //创建的input添加到body",
+      "    document.body.appendChild(inputZ);",
+      "    //选中input中的值",
+      "    document.getElementById('inputCopy').select();",
+      "    //把值复制下来",
+      "    document.execCommand('Copy')",
+      "    alert('複製成功');",
+      "    //删除添加的input",
+      "    document.body.removeChild(inputZ);",
+      "    // 成功回調1",
+      "    callback(1);",
+      "  }else{",
+      "    // 失敗回調2",
+      "    callback(2);",
+      "  }",
+      "}"
+    ],
+    "description": "复制文本到剪切板"
+  }
+}
