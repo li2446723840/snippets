@@ -1,0 +1,24 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["call", "apply", "bind", "principle"],
+    "body": [
+      "Function.prototype.myCall = function (context) {",
+      "  let args = [...arguments].slice(1);",
+      "  let target = context || window;",
+      "  let fn = Symbol();",
+      "  console.log(this, \"this\");",
+      "  target[fn] = this;",
+      "  target[fn](...args);",
+      "  delete target[fn];",
+      "};",
+      "let objA = { abc: 123 };",
+      "function funca(a) {",
+      "  console.log(this, \"this111\");",
+      "  console.log(this.abc, a);",
+      "}",
+      "funca.myCall(objA, \"456\");"
+    ],
+    "description": "call、apply、bind的实现原理"
+  }
+}
