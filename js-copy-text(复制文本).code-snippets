@@ -3,6 +3,7 @@
     // "scope": "javascript,typescript",
     "prefix": ["copy", "copyText"],
     "body": [
+      "// 第一种",
       "function copy(callback) {",
       "  if(document.execCommand('Copy')){",
       "    //创建input",
@@ -27,8 +28,17 @@
       "    // 失敗回調2",
       "    callback(2);",
       "  }",
-      "}"
+      "}",
+      "// 第二种",
+      "<button @click=\"copyHandler('applyNoInput')\">复制</button>",
+      "<input id=\"applyNoInput\" :value=\"copyText\" style=\"position: absolute; left: -9999px;\" readonly />",
+      "copyHandler(id, cb) {",
+      "  let dom = document.querySelector(`#${id}`);",
+      "  dom.select();",
+      "  document.execCommand(\"Copy\");",
+      "  cb && cb();",
+      "}",
     ],
-    "description": "复制文本到剪切板"
+    "description": "复制文本到剪切板，推荐使用第二种，第一种在ios有兼容问题"
   }
 }

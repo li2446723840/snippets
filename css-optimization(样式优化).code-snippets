@@ -1,7 +1,7 @@
 {
 	"Print to console": {
 		// "scope": "javascript,typescript,php,java,css,html",
-		"prefix": ["optimization","youhuayangshi"],
+		"prefix": ["optimization","youhuayangshi", "gaodutaxian"],
 		"body": [
 			"body,dl,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,input,p{margin:0;padding:0;}",
 			".clear:after{content:\"\";display:block;clear:both;overflow:hidden;visibility:hidden;height:0;}",
