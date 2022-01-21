@@ -29,7 +29,7 @@
       "</template>",
       "<script>",
       "export default {",
-      "  name: \"\",",
+      "  name: \"\\$1\",",
       "  components: {},",
       "  data() {",
       "    return {",
