@@ -1,0 +1,13 @@
+{
+  "Print to console": {
+  	// "scope": "javascript,typescript",
+  	"prefix": ["skip"],
+  	"body": [
+      "this.$router.push({",
+      "  name: \"$1\",",
+      "  query: {$2}",
+      "})",
+  	],
+  	"description": "vue-router路由跳转"
+  }
+}
