@@ -1,7 +1,7 @@
 {
   "Print to console": {
     // "scope": "javascript,typescript",
-    "prefix": ["webpackConfig", "webpackpeizhiwenjian"],
+    "prefix": ["webpackConfig", "webpackpeizhiwenjian", "webpack", "vueConfig", "config"],
     "body": [
       "/*",
       "npm install webpack -g",
