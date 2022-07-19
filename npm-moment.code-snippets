@@ -1,0 +1,11 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["moment"],
+		"body": [
+      "// 获取三个月的日期，例：",
+      "moment(\"2022-02-10\").subtract(3, \"months\").format(\"YYYY-MM-DD\"); // 2021-11-10",
+		],
+		"description": "moment使用案例"
+	}
+}

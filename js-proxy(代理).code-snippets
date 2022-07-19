@@ -1,0 +1,28 @@
+{
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": ["proxy", "daili"],
+    "body": [
+      "const targetObj = { name: \"tom\" };",
+      "const proxy = new Proxy(targetObj, {",
+      "  get(trapTarget, property, receiver) {",
+      "    console.log(trapTarget === targetObj); // true",
+      "    console.log(property); // name",
+      "    console.log(receiver === proxy); // true",
+      "    console.log(trapTarget === receiver); // false",
+      "    return trapTarget[property];",
+      "  },",
+      "  set(target, property, value, receiver) {",
+      "    console.log(target === targetObj); // true",
+      "    console.log(property); // age",
+      "    console.log(value); // 12",
+      "    console.log(receiver === proxy); // true",
+      "    console.log(target === receiver); // false",
+      "  }",
+      "});",
+      "console.log(proxy.name, \"proxy\");",
+      "proxy.age = 12;"
+    ],
+    "description": "代理"
+  }
+}

@@ -3,13 +3,13 @@
     // "scope": "javascript,typescript",
     "prefix": ["php", "request"],
     "body": [
-      "let params = {};",
-      "let { code, data, message } = await $1(params);",
-      "if (code === 2000) {",
-      "  console.log(data, \"data\");",
-      "} else {",
-      "  this.\\$message.error(message);",
-      "}"
+      "async function $1() {",
+      "  const params = {};",
+      "  const { code, data } = await $2(params);",
+      "  if (code === 2000) {",
+      "    console.log(data, \"data\");",
+      "  }",
+      "}",
     ],
     "description": "处理php请求"
   }

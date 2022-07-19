@@ -3,7 +3,9 @@
 		// "scope": "javascript,typescript,php,java,css,html",
 		"prefix": ["optimization","youhuayangshi", "gaodutaxian"],
 		"body": [
+      "html {height: 100%;}",
 			"body,dl,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,input,p{margin:0;padding:0;}",
+      "body { height: 100%; min-width: 100vw; }",
 			".clear:after{content:\"\";display:block;clear:both;overflow:hidden;visibility:hidden;height:0;}",
 			".clear{zoom:1;}",
 			"a{text-decoration:none;}",

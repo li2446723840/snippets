@@ -7,7 +7,7 @@
       "console.log(num.toFixed(2));// 3.94   //保留小数点后几位",
       "console.log(parseInt(num));// 3       //取整",
       "console.log(parseInt(-num));// -3     //取整",
-      "console.log(parseFloat(num));// 3.141592654",
+      "console.log(parseFloat(num));// 3.141592654  函数可解析一个字符串，并返回一个浮点数。该函数指定字符串中的首个字符是否是数字。如果是，则对字符串进行解析，直到到达数字的末端为止，然后以数字返回该数字，而不是作为字符串。",
       "console.log(Number(num));// 3.141592654",
       "console.log(Boolean(num));// true"
     ],

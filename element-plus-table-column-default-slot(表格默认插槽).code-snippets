@@ -1,0 +1,12 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["slot", "default-slot", "table-slot"],
+		"body": [
+			"<template #default=\"{ row }\">",
+      "  <span>{{ row.$1 }}</span>",
+      "</template>",
+		],
+		"description": "element-plus表格默认插槽"
+	}
+}

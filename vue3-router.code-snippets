@@ -1,0 +1,12 @@
+{
+	"Print to console": {
+		// "scope": "javascript,typescript",
+		"prefix": ["vue3-router","router"],
+		"body": [
+      "import { useRouter, useRoute } from \"vue-router\";",
+      "const router = useRouter();",
+      "const route = useRoute();",
+		],
+		"description": "vue3使用vue-router快捷方式"
+	}
+}
