@@ -1,20 +1,24 @@
 {
-	"Print to console": {
-		// "scope": "javascript,typescript",
-		"prefix": ["vue", "vue3-template", "vue3"],
-		"body": [
-			"<script setup lang=\"ts\">",
+  "Print to console": {
+    // "scope": "javascript,typescript",
+    "prefix": [
+      "vue",
+      "vue3-template",
+      "vue3"
+    ],
+    "body": [
+      "<script setup lang=\"ts\"> name=\"$1\"",
       "  // import { useRouter, useRoute } from \"vue-router\";",
       "  // const router = useRouter();",
       "  // const route = useRoute();",
       "</script>",
       "",
       "<template>",
-      "  <div>$1</div>",
+      "  <div></div>",
       "</template>",
       "",
       "<style lang=\"less\" scoped></style>",
-		],
-		"description": "vue3 + ts 模板"
-	}
+    ],
+    "description": "vue3 + ts 模板"
+  }
 }
