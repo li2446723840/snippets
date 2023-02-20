@@ -51,7 +51,7 @@
       "  mounted() {",
       "    // 监听窗口大小，改变表格最",
       "    window.addEventListener(\"resize\", this.updateTableMaxHeight);",
-      "    this.\\$once(\"hook:beforeDestroyed\", () => {",
+      "    this.\\$once(\"hook:beforeDestroy\", () => {",
       "      window.removeEventListener(\"resize\", this.updateTableMaxHeight);",
       "    });",
       "  },",
